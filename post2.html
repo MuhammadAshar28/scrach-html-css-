@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid vs. Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #000000;
+        }
+
+        header, footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #000000;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        article h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mindly Blog</h1>
+        <p>Your guide to web development and design</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h1 id="css-grid-vs-flexbox">CSS Grid vs. Flexbox</h1>
+                <p><small>By Ashar | November 3, 2024</small></p>
+            </header>
+
+            <section>
+                <h2>What is CSS Grid?</h2>
+                <p>CSS Grid Layout is a two-dimensional layout system for the web. It allows you to create grid-based layouts with rows and columns. You can define grid items' size, position, and behavior in a very flexible way.</p>
+            </section>
+
+            <section>
+                <h2>What is Flexbox?</h2>
+                <p>Flexbox, or the Flexible Box Layout, is a one-dimensional layout model that provides an easier and more efficient way to lay out, align, and distribute space among items in a container. It works on either a row or column basis.</p>
+            </section>
+
+            <section>
+                <h2>Key Differences Between CSS Grid and Flexbox</h2>
+                <ul>
+                    <li><strong>Dimension:</strong> CSS Grid works in two dimensions (rows and columns), while Flexbox is designed for one dimension (either row or column).</li>
+                    <li><strong>Use Case:</strong> Use CSS Grid for complex layouts where you need both rows and columns; use Flexbox for simpler layouts with one-dimensional alignment.</li>
+                    <li><strong>Control:</strong> CSS Grid provides more control over positioning items, while Flexbox is more about distributing space and aligning items in a single direction.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>When to Use CSS Grid</h2>
+                <p>Use CSS Grid when you need a complex layout that requires precise placement of elements across both axes, such as in a dashboard or gallery layout.</p>
+            </section>
+
+            <section>
+                <h2>When to Use Flexbox</h2>
+                <p>Use Flexbox when you want to arrange items in a single direction and need to distribute space dynamically, such as navigation bars or form controls.</p>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>Both CSS Grid and Flexbox are powerful layout tools that serve different purposes. Understanding when to use each can greatly enhance your web design skills and improve the responsiveness of your sites.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mindly. All rights reserved.</p>
+    </footer>
+</body>
+</html>

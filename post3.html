@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Accessibility into Your Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: #000000;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        article h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mindly Blog</h1>
+        <p>Your guide to web development and design</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h1 id="building-accessibility">Building Accessibility into Your Site</h1>
+                <p><small>By Ashar | November 3, 2024</small></p>
+            </header>
+
+            <section>
+                <h2>What is Web Accessibility?</h2>
+                <p>Web accessibility refers to the practice of creating websites that can be used by everyone, including people with disabilities. It ensures that all users can perceive, understand, navigate, and interact with the web effectively.</p>
+            </section>
+
+            <section>
+                <h2>Why is Accessibility Important?</h2>
+                <p>Making your website accessible is not just a legal requirement in many countries, but it also broadens your audience and improves user experience for all. An accessible website can lead to increased traffic and customer satisfaction.</p>
+            </section>
+
+            <section>
+                <h2>Key Principles of Accessible Design</h2>
+                <ul>
+                    <li><strong>Perceivable:</strong> Users must be able to perceive the information being presented. This includes text alternatives for non-text content, captions for videos, and adaptable layouts.</li>
+                    <li><strong>Operable:</strong> Users must be able to operate the interface. This involves making all functionalities available from a keyboard and ensuring users have enough time to read and use content.</li>
+                    <li><strong>Understandable:</strong> Information and operation of the user interface must be understandable. This means using clear language and consistent navigation to help users understand how to interact with the site.</li>
+                    <li><strong>Robust:</strong> Content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Best Practices for Building Accessibility</h2>
+                <ul>
+                    <li><strong>Use Semantic HTML:</strong> Properly use HTML elements (like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>) to enhance the document structure and make it easier for assistive technologies to interpret.</li>
+                    <li><strong>Provide Text Alternatives:</strong> Ensure all images, videos, and non-text content have text alternatives (alt text) that convey the same meaning as the visual content.</li>
+                    <li><strong>Design for Keyboard Navigation:</strong> Make sure all interactive elements can be accessed and operated using a keyboard alone.</li>
+                    <li><strong>Test with Screen Readers:</strong> Regularly test your site with screen readers and other assistive technologies to ensure all users can navigate effectively.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>Building accessibility into your website is essential for providing a positive user experience for all. By following the principles and best practices outlined above, you can create a more inclusive web environment that benefits everyone.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mindly. All rights reserved.</p>
+    </footer>
+</body>
+</html>
